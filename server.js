@@ -8,8 +8,7 @@ const app = express();
 
 app.set('view engine', 'ejs')
 
-app.listen(process.env.PORT, () => {
-})
+app.listen(process.env.PORT);
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
