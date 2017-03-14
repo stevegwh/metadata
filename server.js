@@ -8,8 +8,7 @@ const app = express();
 
 app.set('view engine', 'ejs')
 
-app.listen(3000, () => {
-  console.log('Now listening to port 3000')
+app.listen(process.env.PORT, () => {
 })
 
 app.use(bodyParser.urlencoded({extended: true}));
